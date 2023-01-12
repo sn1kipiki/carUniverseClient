@@ -55,25 +55,17 @@ const NavBar = observer(() => {
         {burgerVisible ? (
           <ul class="nav active">
             <li class="item">
-              <a class="item-a" href="/main">
+              <a class="item-a" onClick={() => navigate(MAIN_ROUTE)}>
                 MainPage
               </a>
             </li>
             <li class="item">
-              <a
-                class="item-a"
-                href="/catalog
-              "
-              >
+              <a class="item-a" onClick={() => navigate(CATALOG_ROUTE)}>
                 Catalog
               </a>
             </li>
             <li class="item">
-              <a
-                class="item-a"
-                href="/contacts
-              "
-              >
+              <a class="item-a" onClick={() => navigate(CONTACTS_ROUTE)}>
                 Contacts
               </a>
             </li>
@@ -81,17 +73,17 @@ const NavBar = observer(() => {
         ) : (
           <ul class="nav">
             <li class="item">
-              <a class="item-a" href="/main">
+              <a class="item-a" onClick={() => navigate(MAIN_ROUTE)}>
                 MainPage
               </a>
             </li>
             <li class="item">
-              <a class="item-a" href="/catalog">
+              <a class="item-a" onClick={() => navigate(CATALOG_ROUTE)}>
                 Catalog
               </a>
             </li>
             <li class="item">
-              <a class="item-a" href="/contacts">
+              <a class="item-a" onClick={() => navigate(CONTACTS_ROUTE)}>
                 Contacts
               </a>
               {/* href="/contacts" */}
